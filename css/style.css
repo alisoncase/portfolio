@@ -88,3 +88,7 @@ body {
     background-color: white;
     color: #3B3B3B;
 }
+br {
+    line-height: .5;
+    margin: 0; 
+}
