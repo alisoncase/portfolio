@@ -26,15 +26,41 @@
 
 /*** CARD ***/
 
+/* Set a consistent height for the cards */
 .card {
     background-color: #fff;
     border-color: #cccccc;
     border-width: 1px;
     width: 100%;
+    height: 350px; /* Adjust this value as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
+/* Highlight the card on hover */
 .card:hover {
-    border-color: #B5B5B5;
+    border-color: #B5B5B5; 
+    border-width: 2px; 
+    transition: border-color 0.3s ease; 
+}
+
+/* Add spacing between the cards */
+.card + .card {
+    margin-top: 20px; /* Adjust this value as needed */
+}
+
+/* Ensure card images fit properly without cropping */
+.card-img-top {
+    height: 250px; /* Adjust this value as needed */
+    object-fit: contain; /* Ensures the entire image is visible */
+    width: 100%; /* Ensures the image spans the full width of the card */
+    background-color: #f8f9fa; /* Optional: Adds a background color for empty space */
+}
+
+/* Add spacing between rows of cards */
+.row > .col-md-4 {
+    margin-bottom: 20px; /* Adjust this value as needed */
 }
 
 /*** Basic Text Styles ***/
